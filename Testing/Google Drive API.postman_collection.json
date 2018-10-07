@@ -1,0 +1,323 @@
+{
+	"info": {
+		"_postman_id": "1214fe7a-ba67-48eb-a7dd-71c9ffb9c7f8",
+		"name": "Google Drive API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Credential Destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://e9713630.ngrok.io/rest/credential",
+					"protocol": "http",
+					"host": [
+						"e9713630",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"rest",
+						"credential"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Credential Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "credentialFile",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://e9713630.ngrok.io/rest/credential/file",
+					"protocol": "http",
+					"host": [
+						"e9713630",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"rest",
+						"credential",
+						"file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Credential Callback URL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "credentialFile",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://e9713630.ngrok.io/rest/credential",
+					"protocol": "http",
+					"host": [
+						"e9713630",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"rest",
+						"credential"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Credential Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://e9713630.ngrok.io/rest/credential",
+					"protocol": "http",
+					"host": [
+						"e9713630",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"rest",
+						"credential"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Folder List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://e2f833cc.ngrok.io/rest/folders/root",
+					"protocol": "http",
+					"host": [
+						"e2f833cc",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"rest",
+						"folders",
+						"root"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Folder Metadata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://e9713630.ngrok.io/rest/folders/root/metadata",
+					"protocol": "http",
+					"host": [
+						"e9713630",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"rest",
+						"folders",
+						"root",
+						"metadata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Folder Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://e9713630.ngrok.io/rest/folders/root/?foldername=dir6",
+					"protocol": "http",
+					"host": [
+						"e9713630",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"rest",
+						"folders",
+						"root",
+						""
+					],
+					"query": [
+						{
+							"key": "foldername",
+							"value": "dir6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Folder Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://e9713630.ngrok.io/rest/folders/1F652dWavwd1HpRbW3t8oRDtN3WJZdudn",
+					"protocol": "http",
+					"host": [
+						"e9713630",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"rest",
+						"folders",
+						"1F652dWavwd1HpRbW3t8oRDtN3WJZdudn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "File Metadata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://e9713630.ngrok.io/rest/files/1GGaz5LfjZXG6tsq0FVdH7Y8tXpuu1BTr/metadata",
+					"protocol": "http",
+					"host": [
+						"e9713630",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"rest",
+						"files",
+						"1GGaz5LfjZXG6tsq0FVdH7Y8tXpuu1BTr",
+						"metadata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "File Download",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://e9713630.ngrok.io/rest/files/1GGaz5LfjZXG6tsq0FVdH7Y8tXpuu1BTr",
+					"protocol": "http",
+					"host": [
+						"e9713630",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"rest",
+						"files",
+						"1GGaz5LfjZXG6tsq0FVdH7Y8tXpuu1BTr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "File Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://e9713630.ngrok.io/rest/files/root",
+					"protocol": "http",
+					"host": [
+						"e9713630",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"rest",
+						"files",
+						"root"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "File Remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://e9713630.ngrok.io/rest/files/1wI8yLdS_qmIZO23vBNoPHpddP39JNBDp",
+					"protocol": "http",
+					"host": [
+						"e9713630",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"rest",
+						"files",
+						"1wI8yLdS_qmIZO23vBNoPHpddP39JNBDp"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
